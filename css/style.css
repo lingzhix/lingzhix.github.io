@@ -31,9 +31,9 @@ user-select: none;
 --normal-font-size:1em;
 
 /* scroll bar colors */
---scroll-bar-color:#c5cadf;
---scroll-thumb-color:#70768a;
---scroll-thumb-hover-color:#454f6b;
+--scroll-bar-color:#C5DFD1;
+--scroll-thumb-color:#718F7F;
+--scroll-thumb-hover-color:#3D6A5A;
 
 }
 
@@ -65,6 +65,18 @@ li{
     list-style: none;
 }
 
+::-webkit-scrollbar{
+    width: 18px;
+    background: var(--scroll-bar-color);
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--scroll-thumb-color);
+    border-radius: 2em;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: var(--scroll-thumb-hover-color);
+}
 
 /* header */
 header{
@@ -186,7 +198,6 @@ header{
 
 .home-container .home-img img{
     height: 300px;
-    display: block;
     transform: translate(0, 0);
     border: .5rem solid #fff;
     border-radius: 10px;
@@ -288,44 +299,49 @@ animation: arrow-down ease 2s infinite;
 
 .about-img img{
     max-width: 100%;
-    min-width: 500px;
+    min-width: 400px;
     border-radius: 10px;
     border: .5rem solid #fff;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
 }
 
 .about-info .description{
-    max-width: 600px;
+    flex: 1 1 55rem;
 }
 .about-info .description h3{
     font-size: 2em;
-    font-weight: 600;
-    margin-bottom: 10px;
+    color: var(--first-color);
 }
 
-.about-info .description span{
-    color:var(--second-color)
+.about-info .description h3 span{
+    color: var(--second-color)
 }
 
-.about-info .description p{
+.about-info .description .info{
     color: var(--third-color);
     font-size: var(--normal-font-size);
-    margin-bottom: 15px;
-    padding-bottom: 25px;
-    border-bottom: 2px solid var(--line-color);
+    padding: 1rem 0;
+    line-height: 2;
 }
 
-.about-info .professional-list{
+.about-info .box-container{
     display: flex;
-    column-gap: 30px;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1rem 0;
 }
 
-.about-info .professional-list .list-item h3{
-    font-size: 2.5em;
-    font-weight: 700;
+.about-info .box-container .box{
+    flex: 1 1 10rem;
 }
 
-.about-info .professional-list .list-item span{
-    color: var(--third-color);
-    font-size: var(--small-font-size);
+.about-info .box-container .box p{
+    font-size: var(--normal-font-size);
+    color: var(--first-color);
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.about-info .box-container .box p span{
+    color: var(--second-color);
 }
