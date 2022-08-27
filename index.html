@@ -1,29 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
-    <meta name="'viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>lingzhix Project 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小凌的个人网站</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
 </head>
 <body>
-<section class="main-scructure">
-    <header>
-        <a href="#">
-            <div class="logo">Travel</div>
-        </a>
-    </header>
-    <div class="content">
-        Body
+<!-- header -->
+<header>
+    <div class="nav-bar">
+        <a href="#" class="logo"><img src="images/logo.png" height="32px"></a>
+        <div class="navigation">
+            <div class="nav-items">
+                <a href="#home">主页</a>
+                <a href="#about">关于我</a>
+                <a href="#skills">技能</a>
+                <a href="#portfolio">作品集</a>
+            </div>
+        </div>
     </div>
-    <footer>
-        Footer
-    </footer>
-    </section>
-<section class="aside-menu">
+</header>
 
+<!-- home section -->
+<section class="home flex-center" id="home">
+<div class="home-container">
+    <div class="media-icons">
+        <a href="#"><i class="fa-brands fa-weixin"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div class="info">
+        <h2>嗨, 我是凌志祥</h2>
+        <h3>一名UX/UI设计师</h3>
+        <p>专注于视觉与易用性的平衡，为使用者带来更加良好的用户体验。</p>
+        <a href="#" class="btn">联系我 <i class="fas fa-arrow-circle-right"></i></a>
+    </div>
+    <div class="home-img" data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="600">
+        <img src="images/main-img.png" alt="">
+    </div>
+    </div>
+    <a href="#about" class="scroll-down">向下滚动 <i class="fa-solid fa-chevron-down" ></i></a>
 </section>
 
-    <script src="script.js"></script>
+<!-- about section -->
+<section class="about section"  id="about">
+    <div class="container flex-center">
+        <h1 class="section-title-01">About Me</h1>
+        <h2 class="section-title-02">About Me</h2>
+        <div class="content flex-center">
+            <div class="home-img" data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="600">
+                <img src="images/main-img1.png" alt="">
+            </div>
+            <div class="about-info">
+                <div class="description">
+                    <h3>姓名：<span>凌志祥</span></h3>
+                    <p>本科毕业后决定从事UI/UX设计工作，目前已掌握设计相关理论知识与设计工具的使用，具有较好的用户同理心与团队沟通能力。</p>
+                </div>
+                    <ul class="professional-list">
+                        <li class="list-item">
+                            <h3>5+</h3>
+                            <span>years of<br>experience</span>
+                        </li>
+                        <li class="list-item">
+                            <h3>5+</h3>
+                            <span>years of<br>experience</span>
+                        </li>
+                        <li class="list-item">
+                            <h3>5+</h3>
+                            <span>years of<br>experience</span>
+                        </li>
+                    </ul>
+                <a href="#" class="btn">下载简历 <i class="fas fa-download"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- external scripts -->
+<script type="text/javascript" src="js/vanilla-tilt.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
