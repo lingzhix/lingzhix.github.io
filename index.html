@@ -1,64 +1,123 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>小凌的个人网站</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-</head>
-<body>
-<!-- header -->
-<header>
-    <div class="nav-bar">
-        <a href="#" class="logo"><img src="images/logo.png" height="32px"></a>
-        <div class="navigation">
-            <div class="nav-items">
-                <a href="#home">主页</a>
-                <a href="#about">关于我</a>
-                <a href="#skills">技能</a>
-                <a href="#portfolio">作品集</a>
-            </div>
-        </div>
-    </div>
-</header>
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        
+        <!-- =====================font-awesome===================== -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 
-<!-- home section -->
-<section class="home flex-center" id="home">
-<div class="home-container">
-    <div class="media-icons">
-        <a href="#"><i class="fa-brands fa-weixin"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-    </div>
-    <div class="info">
-        <h2>嗨, 我是凌志祥</h2>
-        <h3>一名UX/UI设计师</h3>
-        <p>专注于视觉与易用性的平衡，为使用者带来更加良好的用户体验。</p>
-        <a href="#" class="btn">联系我 <i class="fas fa-arrow-circle-right"></i></a>
-    </div>
-    <div class="home-img" data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="600">
-        <img src="images/main-img.png" alt="">
-    </div>
-    </div>
-    <a href="#about" class="scroll-down">向下滚动 <i class="fa-solid fa-chevron-down" ></i></a>
-</section>
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="css/styles.css">
 
-<!-- about section -->
-<section class="about section"  id="about">
-    <div class="container flex-center">
-        <h1 class="section-title-01">About Me</h1>
-        <h2 class="section-title-02">About Me</h2>
-        <div class="content flex-center">
-            <div class="about-img" data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="600">
-                <img src="images/main-img1.png" alt="">
-            </div>
+        <title>小凌的个人网站</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav_logo">Ling</a>
 
-            <div class="about-info">
-                <div class="description">
-                    <h3>姓名：<span>凌志祥</span></h3>
-                    <p class="info">本科毕业后决定从事UI/UX设计工作，目前已掌握设计相关理论知识与设计工具的使用，具有较好的用户同理心与团队沟通能力。</p>
+                <div class="nav_menu" id="nav-menu">
+                    <ul class="nav_list grid">
+                        <li class="nav_item">
+                            <a href="#home" class="nav_link active-link">
+                                <i class="uil uil-estate nav_icon"></i> 主页
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#about" class="nav_link">
+                                <i class="uil uil-user nav_icon"></i>关于我
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#skills" class="nav_link">
+                                <i class="uil uil-file nav_icon"></i>技能
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#portfolio" class="nav_link">
+                                <i class="uil uil-scenery nav_icon"></i>作品集
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#contact" class="nav_link">
+                                <i class="uil uil-message nav_icon"></i>联系我
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav_close" id="nav-close"></i>
                 </div>
+                <div class="nav_btns">
+                    <div class="nav_toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home-container container grid">
+                    <div class="home_content grid">
+                        <div class="home_social">
+                            <a href="" target="_blank" class="home_social-icon">
+                            </a>
+                            <a href="" target="_blank" class="home_social-icon">
+                                <!-- <i class="fab fa-instagram"></i> -->
+                            </a>
+                            <a href="" target="_blank" class="home_social-icon">
+                                
+                            </a>
+                        </div>
+
+                        <div class="home_img">
+                            <svg class="home_blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                    <image class="home_blob-img" x='12' y='0' xlink:href="img/about.png"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="home_data">
+                            <h1 class="home_title">嗨，我是凌志祥</h1>
+                            <h3 class="home_subtitle">一名UX/UI设计师</h3>
+                            <p class="home_description">专注于视觉与易用性的平衡，为使用者带来更加良好的用户体验。</p>
+                            <a href="#contact" class="button button--flex">
+                                联系我 <i class="uil uil-message button_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="home_scroll">
+                        <a href="#about" class="scroll-down">向下滚动 <i class="fa-solid fa-chevron-down home_scroll-arrow"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <h1 class="section-title-01">About Me</h1>
+                <h2 class="section-title-02">About Me</h2>
+                <div class="container container grid"><img src="img/main-img.png" alt="" class="about_img">
+                <div class="about_data">
+                    <p class="about_description">本科毕业后决定从事UI/UX设计工作，目前已掌握设计相关理论知识与设计工具的使用，具有较好的用户同理心与团队沟通能力。</p>
                     <div class="box-container">
                         <div class="box">
                         <p><span>年龄：</span>23</p>
@@ -73,20 +132,296 @@
                         <p><span>邮箱：</span>seanling0326@gmail.com</p>
                     </div>
                     </div>
-                <a href="images/jianli.png" download="jianli.png" class="btn">下载简历 <i class="fas fa-download"></i></a>
-            </div>
+                <!-- <div class="about_info">
+                    <div>
+                        <span class="about_info-title">23</span>
+                        <span class="about_info-name">年龄</span>
+                    </div>
+                    <div>
+                        <span class="about_info-title">男</span>
+                        <span class="about_info-name">性别</span>
+                    </div>
+                    <div>
+                        <span class="about_info-title">11</span>
+                        <span class="about_info-name">xx<br>xx</span>
+                    </div>
+                    <div>
+                        <span class="about_info-title">11</span>
+                        <span class="about_info-name">xx<br>xx</span>
+                    </div>
+                </div> -->
+                <div class="about_buttons">
+                    <a download="" href="pdf/Alexa-Cv.pdf" class="button button--flex">
+                       下载简历 <i class="uil uil-file-download button_icon"></i>
+                    </a>
+                </div>
+                </div>
+                </div>
+            </section>
+
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="skills">
+                <h1 class="section-title-01">Skills</h1>
+                <h2 class="section-title-02">Skills</h2>
+                <div class="skills_container container grid">
+                    <div>
+                        <!-- ===================SKILLS 1=================== -->
+                        <div class="skills_content skills_open">
+                            <div class="skills_header">
+                                <i class="uil uil-brush-alt skills_icon"></i>
+                                <div>
+                                    <h1 class="skills_title">UI/UX设计</h1>
+                                    <span class="skills_subtitle">半年</span>
+                                </div>
+                                <i class="uil uil-angle-down skills_arrow"></i>
+                            </div>
+
+                            <div class="skills_list grid">
+                                <div class="skills_data">
+                                    <div class="skills_titles">
+                                        <h3 class="skills_name">Figma</h3>
+                                        <span class="skills_number">80%</span>
+                                    </div>
+                                    <div class="skills_bar">
+                                        <span class="skills_percentage skills_figma"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills_data">
+                                    <div class="skills_titles">
+                                        <h3 class="skills_name">Illustrator</h3>
+                                        <span class="skills_number">60%</span>
+                                    </div>
+                                    <div class="skills_bar">
+                                        <span class="skills_percentage skills_illustrator"></span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills_data">
+                                    <div class="skills_titles">
+                                        <h3 class="skills_name">Photoshop</h3>
+                                        <span class="skills_number">50%</span>
+                                    </div>
+                                    <div class="skills_bar">
+                                        <span class="skills_percentage skills_ps"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                        <div>
+                        <!-- ===================SKILLS 2=================== -->
+                        <div class="skills_content skills_close">
+                            <div class="skills_header">
+                                <i class="uil uil-desktop skills_icon"></i>
+                                <div>
+                                    <h1 class="skills_title">前端开发</h1>
+                                    <span class="skills_subtitle">三年</span>
+                                </div>
+                                <i class="uil uil-angle-down skills_arrow"></i>
+                            </div>
+
+                            <div class="skills_list grid">
+                                <div class="skills_data">
+                                    <div class="skills_titles">
+                                        <h3 class="skills_name">HTML</h3>
+                                        <span class="skills_number">70%</span>
+                                    </div>
+                                    <div class="skills_bar">
+                                        <span class="skills_percentage skills_html"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills_data">
+                                    <div class="skills_titles">
+                                        <h3 class="skills_name">CSS</h3>
+                                        <span class="skills_number">60%</span>
+                                    </div>
+                                    <div class="skills_bar">
+                                        <span class="skills_percentage skills_css"></span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills_data">
+                                    <div class="skills_titles">
+                                        <h3 class="skills_name">JavaScript</h3>
+                                        <span class="skills_number">50%</span>
+                                    </div>
+                                    <div class="skills_bar">
+                                        <span class="skills_percentage skills_js"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                      
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PORTFOLIO ====================-->
+            <section class="portfolio section" id="portfolio">
+                <h1 class="section-title-01">Portfolio</h1>
+                <h2 class="section-title-02">Portfolio</h2>
+                <div class="portfolio_container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- =================PORTFOLIO 1================= -->
+                        <div class="portfolio_content grid swiper-slide">
+                        <img src="img/portfolio1.jpg" alt="" class="portfolio_img">
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">作品一</h3>
+                            <p class="portfolio_description">xxx</p>
+                            <a href="#" class="button button--flex button--small portfolio_button">
+                                浏览作品
+                                <i class="uil uil-arrow-right button_icon"></i>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- =================PORTFOLIO 2================= -->
+                        <div class="portfolio_content grid swiper-slide">
+                            <img src="img/portfolio2.jpg" alt="" class="portfolio_img">
+                            <div class="portfolio_data">
+                                <h3 class="portfolio_title">作品二</h3>
+                                <p class="portfolio_description">xxx</p>
+                                <a href="#" class="button button--flex button--small portfolio_button">
+                                    浏览作品
+                                    <i class="uil uil-arrow-right button_icon"></i>
+                                </a>
+                            </div>
+                            </div>
+
+                            <!-- =================PORTFOLIO 3================= -->
+                        <div class="portfolio_content grid swiper-slide">
+                            <img src="img/portfolio3.jpg" alt="" class="portfolio_img">
+                            <div class="portfolio_data">
+                                <h3 class="portfolio_title">作品三</h3>
+                                <p class="portfolio_description">xxx</p>
+                                <a href="#" class="button button--flex button--small portfolio_button">
+                                    浏览作品
+                                    <i class="uil uil-arrow-right button_icon"></i>
+                                </a>
+                            </div>
+                            </div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                    </div>
+                    <!-- Add Pagination-->
+                    <div class="swiper-pagination"></div>
+
+                </div>
+            </section>
+
+            <!--==================== PROJECT IN MIND ====================-->
+            <section class="project section">
+
+            </section>
+
+            <!--==================== TESTIMONIAL ====================-->
+            <section class="testimonial section">
+                
+            </section>
+
+            <!--==================== CONTACT ME ====================-->
+            <section class="contact section" id="contact">
+                <h1 class="section-title-01">Contact Me</h1>
+                <h2 class="section-title-02">Contact Me</h2>
+                <div class="contact_container container grid">
+                    <div>
+                    <div class="contact_information">
+                        <i class="uil uil-phone contact_icon"></i>
+                    <div>
+                        <h3 class="contact_title">电话</h3>
+                        <span class="contact_subtitle">15250206092</span>
+                    </div>
+                    </div>
+
+                    <div class="contact_information">
+                        <i class="uil uil-envelope contact_icon"></i>
+                    <div>
+                        <h3 class="contact_title">邮箱</h3>
+                        <span class="contact_subtitle">seanling0326@gmail.com</span>
+                    </div>
+                    </div>
+
+                    <div class="contact_information">
+                        <i class="uil uil-map-marker contact_icon"></i>                    <div>
+                        <h3 class="contact_title">地址</h3>
+                        <span class="contact_subtitle">江苏，昆山</span>
+                    </div>
+                    </div>
+                    </div>
+                 <form action="" class="contact_form grid">
+                    <div class="contact_inputs grid">
+                        <div class="contact_content">
+                            <label for="" class="contact_label">姓名</label>
+                            <input type="text" class="contact_input">
+                        </div>
+                        <div class="contact_content">
+                            <label for="" class="contact_label">邮箱</label>
+                            <input type="email" class="contact_input">
+                        </div>
+                    </div>
+                    <div class="contact_content">
+                        <label for="" class="contact_label">消息内容</label>
+                        <textarea name="" id="" cols="" rows="7" class="contact_input"></textarea>
+                    </div>
+                    <div>
+                    <a href="mailto:seanling0326@gmail.com" class="button button--flex">发送消息
+                        <i class="uil uil-message button_icon"></i>
+                    </a>
+                    </div>
+                 </form>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+         <div class="footer_bg">
+            <div class="footer_container container grid">
+                <div>
+                <h1 class="footer_title">凌志祥</h1>
+                <span class="footer_subtitle">UX/UI设计师</span>
+         </div>
+         <ul class="footer_links">
+            <li>
+                <a href="#about" class="footer_link">关于我</a>
+            </li>
+            <li>
+                <a href="#portfolio" class="footer_link">作品集</a>
+            </li>
+            <li>
+                <a href="#contact" class="footer_link">联系我</a>
+            </li>
+         </ul>
+
+         <div class="footer_socials">
+            <a href="" class="footer_social">
+
+            </a>
+            <a href="" class="footer_social">
+                
+            </a>
+            <a href="" class="footer_social">
+                
+            </a>
+         </div>
         </div>
-    </div>
-</section>
+        <p class="footer_copy">&#169; lingzhix. All right reserved</p>
+        </div>
+        </footer>
+        
+        <!--==================== SCROLL TOP ====================-->
+        <a href="#" class="scrollup" id="scroll-up"><i class="uil uil-arrow-up scrollup_icon"></i></a>
 
-<section class="services" id="services">
-    
-</section>
+        <!--==================== SWIPER JS ====================-->
+        <script src="js/swiper-bundle.min.js"></script>
 
-
-
-<!-- external scripts -->
-<script type="text/javascript" src="js/vanilla-tilt.js"></script>
-<script src="js/main.js"></script>
-</body>
+        <!--==================== MAIN JS ====================-->
+        <script src="js/main.js"></script>
+    </body>
 </html>
