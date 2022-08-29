@@ -904,6 +904,7 @@ img {
   .main,
   .footer_container{
     padding: 0;
+    text-align: center;
   }
 
   .home_blob{
