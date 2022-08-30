@@ -553,10 +553,11 @@ img {
 .portfolio_content{
   padding: 0 1.5rem;
   position: relative;
+  text-align: center;
 }
 
 .portfolio_img{
-  width: 300px;
+  width: 600px;
   border-radius: .5rem;
   justify-self: center;
 }
@@ -673,6 +674,7 @@ img {
 
 .footer_subtitle{
   font-size: var(--small-font-size);
+  margin-bottom: var(--mb-0-25);
 }
 
 .footer_links{
@@ -875,7 +877,7 @@ img {
   }
 
   .portfolio_img{
-    width: 320px;
+    width: 500px;
   }
   .portfolio_content{
     align-items: center;
@@ -904,7 +906,6 @@ img {
   .main,
   .footer_container{
     padding: 0;
-    text-align: center;
   }
 
   .home_blob{
