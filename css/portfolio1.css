@@ -606,7 +606,9 @@ margin-bottom: 1rem;
 }
 
 /*==================== Portfolio 8 ====================*/
-
+.portfolio8{
+  background-color: #f3f3f3;
+}
 .portfolio8_container1,
 .portfolio8_container2 {
   margin-left: var(--mb-1-5);
