@@ -324,12 +324,15 @@ img {
 
 .home_scroll{
   display: none;
+  text-align: center;
+  margin-top: 8%;
 }
 
 .home_scroll-button{
   color: var(--first-color);
   transition:  .3s;
 }
+
 
 
 .home_scroll-name{
@@ -340,8 +343,10 @@ img {
 }
 
 .home_scroll-arrow{
+  text-align: center;
   font-size: 2rem;
   animation: arrow-down ease 2s infinite;
+
 }
 
 @keyframes arrow-down{
