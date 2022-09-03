@@ -771,7 +771,7 @@ margin-bottom: 1rem;
 }
 
 .portfolio10_container .box4 {
-  padding: 2rem 15rem;
+  padding: 2rem 2rem;
   flex: 1 1 10rem;
   justify-content: center;
   text-align: center;
@@ -921,7 +921,8 @@ margin-bottom: 1rem;
     .portfolio5 .box-container,
     .portfolio5 .box-container2,
     .portfolio6 .box-container,
-    .portfolio7 .box-container{
+    .portfolio7 .box-container,
+    .portfolio10 .box-container2{
       flex-direction: column;
       margin: 0 0 0 0;
     }
@@ -949,7 +950,8 @@ margin-bottom: 1rem;
     .portfolio5 .box-container2,
     .portfolio6 .box-container,
     .portfolio7 .box-container,
-    .portfolio8 .box-container2{
+    .portfolio8 .box-container2,
+    .portfolio10 .box-container2{
       flex-direction: column;
       margin: 0 0 0 0;
     }
@@ -1079,6 +1081,10 @@ margin-bottom: 1rem;
     .portfolio7 .box-container .box img{
       width: 80%;
       height: auto;
+    }
+
+    .portfolio10_container .box4 {
+      padding: 2rem 10rem;
     }
     /* .footer_container{
       grid-template-columns: repeat(3, 1fr);
