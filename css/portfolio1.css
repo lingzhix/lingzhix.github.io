@@ -749,6 +749,10 @@ margin-bottom: 1rem;
   display: table;
   margin: 2rem 2rem 1rem 2rem;
 }
+.portfolio10_container .box3{
+  justify-content: center;
+  text-align: center;
+}
 
 .portfolio10_container .box2 h4,
 .portfolio10_container .box3 h4{
@@ -764,6 +768,14 @@ margin-bottom: 1rem;
 }
 .portfolio10_container .box3 h4{
   padding: 2rem;
+}
+
+.portfolio10_container .box4 {
+  padding: 2rem 15rem;
+  flex: 1 1 10rem;
+  justify-content: center;
+  text-align: center;
+  display: flex;
 }
 
 .portfolio10_container .box .img1{
